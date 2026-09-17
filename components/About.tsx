@@ -21,7 +21,7 @@ export default function About() {
           />
           <div className="mt-7 space-y-5 max-w-[560px]">
             <p className="text-[16px] leading-relaxed font-light text-text-dark-dim">
-              O escritório Felipe Andrade foi pensado para oferecer orientação
+              O escritório Fernando Andrade foi pensado para oferecer orientação
               jurídica próxima, clara e estratégica, com atenção aos detalhes
               que fazem diferença em cada decisão.
             </p>

@@ -8,7 +8,7 @@ import { PracticeArea, MethodStep, Insight, AttorneyData } from "./types";
  */
 
 export const attorney: AttorneyData = {
-  fullName: "Felipe Andrade",
+  fullName: "Fernando Andrade",
   photoUrl: "/advogado-generico.png",
   oab: "OAB/SP 000000",
   education: "Bacharel em Direito",
@@ -17,7 +17,7 @@ export const attorney: AttorneyData = {
   practiceAreas: "Consultoria e contencioso estratégico",
   experience: "Atuação dedicada a pessoas e empresas em decisões jurídicas relevantes.",
   bio: [
-    "Felipe Andrade atua com uma abordagem próxima, estratégica e orientada à construção de soluções jurídicas claras para cada cliente.",
+    "Fernando Andrade atua com uma abordagem próxima, estratégica e orientada à construção de soluções jurídicas claras para cada cliente.",
   ],
 };
 
@@ -108,9 +108,9 @@ export const contactInfo = {
   phone: "+55 (11) 3333-2026",
   whatsapp: "+55 (11) 98888-2026",
   whatsappLink: "https://wa.me/5511988882026",
-  email: "contato@felipeandrade.adv.br",
+  email: "contato@fernandoandrade.adv.br",
   address: "Avenida Paulista, 1000, São Paulo - SP",
   hours: "Segunda a sexta, das 9h às 18h",
 };
 
-export const firmName = "Felipe Andrade";
+export const firmName = "Fernando Andrade";

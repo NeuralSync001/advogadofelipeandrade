@@ -15,7 +15,7 @@ export async function POST(request: Request) {
 
     const resend = new Resend(process.env.RESEND_API_KEY);
     const recipient = process.env.CONTACT_EMAIL;
-    const sender = process.env.CONTACT_FROM_EMAIL || "Site Felipe Andrade <onboarding@resend.dev>";
+    const sender = process.env.CONTACT_FROM_EMAIL || "Site Fernando Andrade <onboarding@resend.dev>";
 
     const { error } = await resend.emails.send({
       from: sender,

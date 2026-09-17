@@ -18,14 +18,14 @@ export default function PrivacidadePage() {
             Política de Privacidade
           </h1>
           <p className="mt-6 text-[15.5px] leading-relaxed font-light text-text-dark-dim">
-            Esta política apresenta, de forma resumida, como o escritório Felipe
+            Esta política apresenta, de forma resumida, como o escritório Fernando
             Andrade trata os dados enviados por este site. As informações são
             usadas apenas para responder solicitações, agendar atendimentos e
             prestar os esclarecimentos pedidos pelo visitante.
             <br /><br />
             O escritório adota medidas razoáveis de segurança e não comercializa
             dados pessoais. O titular pode solicitar informações, correções ou
-            exclusão dos dados pelo e-mail contato@felipeandrade.adv.br. Este
+            exclusão dos dados pelo e-mail contato@fernandoandrade.adv.br. Este
             texto é uma versão demonstrativa e deve ser revisado antes da publicação.
           </p>
           <Link href="/" className="inline-block mt-10 text-[13px] text-gold-deep">

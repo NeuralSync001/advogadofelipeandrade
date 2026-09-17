@@ -8,7 +8,7 @@ export default function AttorneyProfile() {
         <div
           className="aspect-[3/4] photo-placeholder-light bg-[#e2d9c4] bg-cover bg-center border border-line-light"
           style={{ backgroundImage: `url(${attorney.photoUrl})` }}
-          aria-label="Retrato demonstrativo de Felipe Andrade"
+          aria-label="Retrato demonstrativo de Fernando Andrade"
           role="img"
         >
         </div>
