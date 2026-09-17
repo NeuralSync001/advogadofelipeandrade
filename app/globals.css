@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+body {
+  background-color: #0a0908;
+  color: #f4efe4;
+}
+
+.wood-bg {
+  position: relative;
+  background-color: #241a12;
+  background-image:
+    repeating-linear-gradient(100deg, rgba(0,0,0,0.10) 0px, rgba(0,0,0,0.10) 1px, transparent 1px, transparent 7px),
+    repeating-linear-gradient(100deg, rgba(255,220,170,0.045) 0px, rgba(255,220,170,0.045) 1px, transparent 1px, transparent 13px),
+    linear-gradient(160deg, #2f2115 0%, #241a12 55%, #1a120c 100%);
+}
+.wood-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(10,9,8,0.15), rgba(10,9,8,0.55) 85%);
+  pointer-events: none;
+}
+
+.photo-placeholder {
+  background-image: repeating-linear-gradient(45deg, rgba(244,239,228,0.03) 0 2px, transparent 2px 14px);
+}
+.photo-placeholder-light {
+  background-image: repeating-linear-gradient(45deg, rgba(33,29,23,0.05) 0 2px, transparent 2px 14px);
+}
+
+.perspective-1800 { perspective: 1800px; }
+.preserve-3d { transform-style: preserve-3d; }
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity .8s cubic-bezier(.22,.61,.36,1), transform .8s cubic-bezier(.22,.61,.36,1);
+}
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
