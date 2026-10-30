@@ -1,40 +1,23 @@
 import type { Metadata } from "next";
-import { Fraunces, Inter } from "next/font/google";
 import "./globals.css";
-import { firmName } from "@/lib/data";
-
-const fraunces = Fraunces({
-  subsets: ["latin"],
-  variable: "--font-fraunces",
-  style: ["normal", "italic"],
-  weight: ["300", "400", "500", "600"],
-});
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  weight: ["300", "400", "500", "600"],
-});
 
 export const metadata: Metadata = {
-  title: `${firmName} — Advocacia`,
+  title: "Margem Advocacia — Direito com perspectiva",
   description:
-    "Atuação jurídica estratégica, personalizada e orientada à proteção dos seus interesses.",
+    "Orientação jurídica criteriosa, com atenção ao que está em jogo e às pessoas por trás de cada decisão.",
   openGraph: {
-    title: `${firmName} — Advocacia`,
+    title: "Margem Advocacia — Direito com perspectiva",
     description:
-      "Atuação jurídica estratégica, personalizada e orientada à proteção dos seus interesses.",
+      "Advocacia para empresas e pessoas, com análise individual e atendimento personalizado.",
     type: "website",
     locale: "pt_BR",
   },
-  icons: {
-    icon: "/favicon.ico",
-  },
+  icons: { icon: "/margem-mark.svg" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="pt-BR" className={`${fraunces.variable} ${inter.variable}`}>
+    <html lang="pt-BR">
       <body className="font-sans antialiased">{children}</body>
     </html>
   );
